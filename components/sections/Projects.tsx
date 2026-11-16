@@ -15,6 +15,9 @@ import { cn } from "@/lib/utils";
 export function Projects() {
   const [category, setCategory] = useState<ProjectCategory>("professional");
   const filtered = projects.filter((project) => project.category === category);
+  const categories = (["professional", "personal"] as const).filter((value) =>
+    projects.some((project) => project.category === value)
+  );
 
   return (
     <section
@@ -32,12 +35,13 @@ export function Projects() {
           />
         </FadeUp>
 
+        {categories.length > 1 && (
         <div
           role="tablist"
           aria-label="Project categories"
           className="mt-10 inline-flex rounded-lg border border-theme-border bg-theme-muted p-1"
         >
-          {(["professional", "personal"] as const).map((value) => (
+          {categories.map((value) => (
             <button
               key={value}
               type="button"
@@ -57,9 +61,10 @@ export function Projects() {
             </button>
           ))}
         </div>
+        )}
 
         <div
-          role="tabpanel"
+          role={categories.length > 1 ? "tabpanel" : undefined}
           className="mt-8 grid gap-6 sm:grid-cols-2"
         >
           <AnimatePresence mode="wait">

@@ -105,34 +105,14 @@ export const hero = {
 
 export const experience: ExperienceItem[] = [
   {
-    id: "decathlon",
-    period: "Mar 2026 – Jun 2026",
-    title: "Omnichannel Sales Advisor",
-    organization: "Decathlon",
-    location: "Blida, Algeria",
-    description:
-      "Guided customers across physical and digital sales journeys, combining product advice with a focus on teamwork and overall satisfaction.",
-    tags: ["Client Relations", "Omnichannel", "Teamwork"],
-  },
-  {
-    id: "thika",
-    period: "Jan 2025 – Jul 2025",
-    title: "Commercial & Social Media Manager",
-    organization: "Thika Auto",
-    location: "Algeria",
-    description:
-      "Owned commercial strategy and brand presence on social platforms — customer service, negotiations, and targeted campaigns to grow sales.",
-    tags: ["Marketing", "Social Media", "Negotiation"],
-  },
-  {
     id: "cscc",
-    period: "2023 – Present",
+    period: "Sep 2021 – Jun 2026",
     title: "Student Lead & Active Member",
     organization: "CSCC — Computer Science Community Club",
     location: "Université Saad Dahlab de Blida",
     description:
-      "Organized tech events, programming workshops, and campus hackathons. Mentored new members and kept the student community moving.",
-    tags: ["Leadership", "Mentorship", "Events"],
+      "Organized tech events, programming workshops, and campus hackathons. Passed technical skills on to new members and collaborated on team software projects.",
+    tags: ["Hackathons", "Workshops", "Mentorship"],
   },
   {
     id: "freelance",
@@ -142,14 +122,14 @@ export const experience: ExperienceItem[] = [
     location: "Remote",
     description:
       "Designed, built, and shipped websites and e-commerce solutions for SMEs — including secure payment integrations and hands-on technical support.",
-    tags: ["Web Development", "E-commerce", "Payments"],
+    tags: ["Web Development", "E-commerce", "REST APIs", "Payments"],
   },
 ];
 
 export const education: EducationItem[] = [
   {
     id: "master",
-    period: "2024 – 2026",
+    period: "2024 – 2026 · Graduated",
     title: "M.Sc. Computer Science — Software Engineering",
     organization: "Université Saad Dahlab de Blida",
     description:
@@ -182,7 +162,7 @@ export const projects: Project[] = [
     title: "XAI Agricultural Yield System",
     description:
       "Explainable AI model for environmental analysis, crop recommendation, and yield prediction — making agricultural decisions transparent instead of black-box.",
-    category: "personal",
+    category: "professional",
     tags: ["Python", "Machine Learning", "XAI", "Pandas"],
     features: [
       "Crop recommendation from environmental signals",
@@ -251,8 +231,19 @@ export const skillGroups: SkillGroup[] = [
     ],
   },
   {
-    title: "Backend & Data",
-    items: ["SQL", "MySQL", "PostgreSQL", "REST APIs", "WordPress", "PHP"],
+    title: "Backend & CMS",
+    items: [
+      "PHP",
+      "REST APIs",
+      "WordPress",
+      "WooCommerce",
+      "Payment Integration",
+      "SEO",
+    ],
+  },
+  {
+    title: "Databases",
+    items: ["SQL", "MySQL", "PostgreSQL"],
   },
   {
     title: "Data & AI",
@@ -261,42 +252,56 @@ export const skillGroups: SkillGroup[] = [
       "Machine Learning",
       "Explainable AI (XAI)",
       "Pandas",
+      "NumPy",
+      "scikit-learn",
+      "Jupyter",
+      "Streamlit",
       "Matplotlib",
       "Power BI",
     ],
   },
   {
-    title: "Tools & Practices",
+    title: "Tools & Platforms",
     items: [
-      "Git / GitHub",
+      "Git",
+      "GitHub",
       "VS Code",
       "Vercel",
+      "Postman",
+      "Figma",
+      "npm",
+      "Microsoft Dynamics 365",
       "Excel",
       "Word",
-      "Microsoft Dynamics 365",
     ],
   },
 ];
 
 export const languages = [
   { name: "Arabic", level: "Native" },
-  { name: "French", level: "Fluent" },
-  { name: "English", level: "Fluent" },
+  { name: "English", level: "Advanced" },
+  { name: "French", level: "Good" },
 ];
 
 export const marquee = [
-  "HTML",
-  "CSS",
+  "HTML5",
+  "CSS3",
   "JavaScript",
   "TypeScript",
   "React",
   "Next.js",
+  "Tailwind CSS",
+  "PHP",
+  "WordPress",
   "Python",
-  "SQL",
+  "Pandas",
+  "scikit-learn",
   "MySQL",
   "PostgreSQL",
   "Git",
-  "Power BI",
+  "GitHub",
+  "Vercel",
+  "Figma",
 ];
 
 export const contact = {
@@ -321,7 +326,7 @@ export const experienceCopy = {
   eyebrow: "Career",
   title: "Experience",
   description:
-    "Industry roles, community leadership, and independent delivery across web products, commerce, and applied AI.",
+    "Freelance delivery and tech community leadership across web products, e-commerce, and applied AI.",
   educationEyebrow: "Education",
   educationTitle: "Studies & certifications",
 };
@@ -330,7 +335,7 @@ export const projectsCopy = {
   eyebrow: "Selected work",
   title: "Projects",
   description:
-    "Client engagements and personal builds — from e-commerce and hospitality to explainable machine learning.",
+    "Client and professional engagements — from e-commerce and hospitality to explainable machine learning.",
   professional: "Professional",
   personal: "Personal",
   details: "Details",
@@ -342,6 +347,6 @@ export const skillsCopy = {
   eyebrow: "Toolbox",
   title: "Skills & technologies",
   description:
-    "A practical stack spanning modern web engineering, data analysis, and applied machine learning.",
+    "A practical stack spanning modern web engineering, e-commerce, data analysis, and applied machine learning.",
   languagesTitle: "Languages",
 };
