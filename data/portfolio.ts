@@ -173,6 +173,7 @@ export const projects: Project[] = [
       "Balancing predictive accuracy with interpretability so agronomists can trust recommendations.",
       "Turning raw environmental data into features that remain explainable end-to-end.",
     ],
+    github: "https://github.com/MehdiR20/agroai-xai",
     accent: "from-emerald-100 to-teal-50",
   },
   {
