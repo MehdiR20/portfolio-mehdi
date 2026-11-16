@@ -47,7 +47,7 @@ type IconComponent = ComponentType<SVGProps<SVGSVGElement> & { size?: number | s
  * which is used for monochrome logos (Next.js, GitHub, Vercel…) so they stay
  * visible in both light and dark mode.
  */
-const registry: Record<string, { icon: IconComponent; color?: string }> = {
+export const techIconRegistry: Record<string, { icon: IconComponent; color?: string }> = {
   HTML5: { icon: SiHtml5, color: "#E34F26" },
   CSS3: { icon: SiCss, color: "#1572B6" },
   JavaScript: { icon: SiJavascript, color: "#E8C400" },
@@ -94,7 +94,7 @@ type TechIconProps = {
 };
 
 export function TechIcon({ name, size = 18, className }: TechIconProps) {
-  const entry = registry[name] ?? { icon: Code2 };
+  const entry = techIconRegistry[name] ?? { icon: Code2 };
   const Icon = entry.icon;
   return (
     <Icon
